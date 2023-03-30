@@ -7,10 +7,10 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+            <a class="nav-link @if(Request::route()->getName() == 'home') active @endif" aria-current="page" href="{{ route('home') }}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('comics-list') }}">Comics list</a>
+            <a class="nav-link" @if(Request::route()->getName() == 'comics-list') active @endif href="{{ route('comics-list') }}">Comics list</a>
           </li>
         </ul>
       </div>
