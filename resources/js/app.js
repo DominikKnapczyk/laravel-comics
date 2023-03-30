@@ -1,7 +1,7 @@
 import "./bootstrap";
 
 // Importiamo il nostro stile custom
-// import "~resources/scss/app.scss";
+import "~resources/scss/app.scss";
 
 // Importiamo la parte JS di Bootstrap
 import * as bootstrap from "bootstrap";

@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Homepage')
+@section('title', 'Comics list')
   
 @section('content')
   <section>
     <div class="container">
-      SPAZIO VUOTO
+      @dump($comics)
     </div>
   </section>
 @endsection
